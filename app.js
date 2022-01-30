@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
 // client will attempt to connect to the web server (to be hosted on AWS)
 // through port 3000
 
-app.listen(process.env.port || 3000, () => {
+const port = process.env.port || 3000;
+app.listen(port, () => {
     console.log("Website of Matthew Bisicchia");
 });
