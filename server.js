@@ -1,7 +1,10 @@
+const path = require('path');
 const express = require('express');
 
 // Create an Express app
 const app = express();
+
+app.use(express.static(path.join(__dirname, 'frontend', 'build')));
 
 // Define a callback function to respond to client's get request at '/'
 app.get('/', (req, res) => {

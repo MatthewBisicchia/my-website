@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.10f10ee2.css",
+    "main.js": "/static/js/main.c286832a.js",
+    "static/media/philly3.JPG": "/static/media/philly3.14499ccc292008708dd4.JPG",
+    "static/media/Matthew.png": "/static/media/Matthew.73d9c07a99faaf181204.png",
+    "static/media/philly2.jpg": "/static/media/philly2.bd544958583ee77fcd04.jpg",
+    "static/media/philly1.JPG": "/static/media/philly1.5de281f2421a5f878a66.JPG",
+    "index.html": "/index.html",
+    "main.10f10ee2.css.map": "/static/css/main.10f10ee2.css.map",
+    "main.c286832a.js.map": "/static/js/main.c286832a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10f10ee2.css",
+    "static/js/main.c286832a.js"
+  ]
+}
