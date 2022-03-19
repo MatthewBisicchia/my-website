@@ -49,21 +49,14 @@ const HomePage = () => {
                     <br />
 
                     <div>I love building things. Programming is my favorite pastime. I also enjoy learning concepts in hardware and signal processing.
-                    I am graduating this May from Rowan University in Glassboro, NJ, studying Electrical and Computer Engineering. If you would like to connect, follow me on LinkedIn, or reach
+                    I am graduating this May from Rowan University in Glassboro, NJ, studying Electrical and Computer Engineering. If you would like to connect, follow me on LinkedIn (link in top right corner), or reach
                     out to me at matthewbisicchia@gmail.com. I look forward to hearing from you!
                     </div>
 
                     <br />
                     <br />
 
-                    <div>This site is built as an Express application running on Amazon Web Services, serving a React frontend. Feel free to also check out
-                    a Spring Boot/Hibernate and AngularJS application I built below (click on the "My Dashboard" App). It is also running on AWS and connected to a MySQL database.
-                    </div>
-
-                    <br />
-                    <br />
-
-                    <div>Below you can also find a link to my Resume.
+                    <div>This site is built as an Express application running on Amazon Web Services, serving a React frontend. Feel free to check out the resources below.
                     </div>
 
                     <br />
@@ -75,6 +68,20 @@ const HomePage = () => {
             
 
                 <div id={styles.menuSection}>
+
+                    <div>
+                    <a style={{fontStyle: 'italic'}}>My Dashboard</a> is an app I built using Spring Boot/Hibernate and AngularJS (access by clicking on the "My Dashboard" App below). It is running on AWS and connected to a MySQL database.
+                    </div>
+                    
+                    <br />
+                    <br />
+
+                    <div>Below you can also find the GitHub for the <a style={{fontStyle: 'italic'}}>My Dashboard</a> app, and a link to my Resume.
+                    </div>
+
+                    <br />
+                    <br />
+
 
                     <div id={styles.items}>
 
