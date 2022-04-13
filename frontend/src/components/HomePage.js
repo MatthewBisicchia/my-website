@@ -70,7 +70,7 @@ const HomePage = () => {
                 <div id={styles.menuSection}>
 
                     <div>
-                    <a style={{fontStyle: 'italic'}}>My Dashboard</a> is an app I built using Spring Boot/Hibernate and AngularJS (access by clicking on the "My Dashboard" App below). It is running on AWS and connected to a MySQL database.
+                    <a style={{fontStyle: 'italic'}}>My Dashboard</a> is an app I built using Spring Boot/Hibernate and Angular (access by clicking on the "My Dashboard" App below). It is running on AWS and connected to a MySQL database.
                     </div>
                     
                     <br />
