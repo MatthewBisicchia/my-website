@@ -1,0 +1,31 @@
+#sideBar {
+    position: fixed;
+    padding-top: 70px;
+    font-family: 'Segoe UI Symbol';
+    min-width: 14%;
+    background-color: rgb(253, 249, 249);
+    display: 'inline-block';
+    border-right: 2px solid gray;
+    height: 100vh;
+    min-height: '100%';
+}
+
+li {
+    user-select: none;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 3px solid rgb(253, 249, 249);
+}
+
+li:hover{
+    transition: 0.5s;
+    background-color: rgb(249, 255, 191);
+    /* border: 3px solid rgb(7, 7, 145); */
+    border: 3px solid black;
+    user-select: none;
+    cursor: pointer;
+}
+
