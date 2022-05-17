@@ -5,11 +5,11 @@ import ProjectsPage from './components/ProjectsPage.js';
 const routes = 
 [
     {
-        path: 'home', 
+        path: 'mainSite/home', 
         element: <HomePage />
     },
     {
-        path: 'projects', 
+        path: 'mainSite/projects', 
         element: <ProjectsPage />
     }
 ];

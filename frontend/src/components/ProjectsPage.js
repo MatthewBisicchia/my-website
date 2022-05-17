@@ -8,9 +8,31 @@ import { SocialIcon } from 'react-social-icons';
 
 const ProjectsPage = () => {
 
-    const gitHubLink = `https://github.com/MatthewBisicchia/Spring_and_Angular_WebApp`;
+    const bioLabLink = `http://matthewbisicchia.com/biolab/dashboard/welcome`;
     const myDashboardLink = `http://mydashboard.matthewbisicchia.com/`;
-   
+
+    let state = {
+        descriptionDisplay: 'none',
+        imageDisplay: 'block'
+    };
+
+    let handleMouseEnterOrLeave = () => {
+        if(state.descriptionDisplay == "none")
+        {
+            state.descriptionDisplay = "block";
+            state.imageDisplay = "none"
+        }
+        else
+        {
+            state.descriptionDisplay = "none";
+            state.imageDisplay = "block"
+        }
+
+        console.log(state.descriptionDisplay);
+        console.log(state.imageDisplay);
+        
+    };
+
     return(
         <React.Fragment>
             <div>
@@ -34,18 +56,18 @@ const ProjectsPage = () => {
 
                     <div id={styles.items}>
 
-                        <a className={styles.link} href={gitHubLink}> 
+                        <a className={styles.link} href={bioLabLink}> 
                             <div className={styles.parent}>
                                 <div className={styles.item}>
 
                                     <div className={styles.itemTitle}>BioLab</div>
 
-                                    <div className={styles.itemDescription}> BioLab is a system to help biologists manage laboratory experiments and exercises. The GitHub for this project is actually the GitHub for this website, as it is a separate react app hosted on the same Express server as this site (for now).</div>
+                                    <div className={styles.itemDescription}><p>BioLab is a system to help biologists manage laboratory experiments and exercises. This is a separate react app hosted on the same Express server as this site.</p></div>
                                     
                                 </div>
 
                                 <div className={styles.gitHubLink}>
-                                    <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia" />
+                                    <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia/my-website/tree/master/biologists_dashboard" />
                                 </div>
                             </div>
                         </a>
@@ -54,15 +76,18 @@ const ProjectsPage = () => {
 
                         <a className={styles.link} href={myDashboardLink}> 
                             <div className={styles.parent}>
-                                <div className={styles.item} id={styles.myDashboardApp} >
+                                <div className={styles.item} id={styles.myDashboardApp} onMouseEnter={handleMouseEnterOrLeave} onMouseLeave={handleMouseEnterOrLeave}>
+
                                     <div className={styles.itemTitle} id={styles.myDashboardImage}>My Dashboard App</div>
 
-                                    <img src={imageSource} id={styles.myDashboardImage} />
+                                    <div style={{ display: "none"  }} className={styles.itemDescription}><p>MyDashboard is a Java Spring Boot and Angular application. It was based on a basic programming challenge completed.</p></div>
                                     
+                                    <img style={{ display: "block" }} id={styles.myDashboardImage} src={imageSource} className={styles.projectImage} />
+
                                 </div>
 
                                 <div className={styles.gitHubLink}>
-                                    <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia" />
+                                    <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia/Spring_and_Angular_WebApp" />
                                 </div>
                             </div>
                         </a>
@@ -74,11 +99,12 @@ const ProjectsPage = () => {
                                 <div className={styles.item}>
                                     <div className={styles.itemTitle}>Play Pumpkin Patch</div>
 
-                                    <img src={resume} id={styles.myResumeImage} />
+                                    <div className={styles.itemDescription}><p>Pumpkin Patch is a nickname I gave to the 2D Video Game Template I put together in May of 2020. </p></div>
+                                
                                 </div>
 
                                 <div className={styles.gitHubLink}>
-                                    <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia" />
+                                    <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia/TwoDVideoGameTemplate" />
                                 </div>
                             </div>
                         </a>
