@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles/WelcomeScreen.module.css';
+import { Link } from 'react-router-dom';
 
 const WelcomeScreen = () => {
 
@@ -15,8 +16,19 @@ const WelcomeScreen = () => {
                 <hr>
                 </hr>
 
-                <div id={styles.getStartedButton}>
-                    Get Started
+                <br>
+                </br>
+
+                <div id={styles.getStartedButtonContainer}>
+                    
+
+                    <Link to="/biolab/dashboard/startNewLab" style={{color: 'black',textDecoration: 'none'}}>
+                    
+                        <div id={styles.getStartedButton}>
+                            Get Started
+                        </div>
+                    
+                    </Link>
                 </div>
 
             </div>

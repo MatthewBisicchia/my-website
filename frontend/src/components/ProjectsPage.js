@@ -1,15 +1,13 @@
 import React from 'react';
 import styles from './styles/ProjectsPage.module.css';
 import imageSource from '../images/myDashboard.JPG';
-import resume from '../images/resume.JPG';
-import myDashboardGitHub from '../images/github.JPG';
-import resumePDF from '../assets/Matthew_Bisicchia_Resume.pdf';
 import { SocialIcon } from 'react-social-icons';
 
 const ProjectsPage = () => {
 
     const bioLabLink = `http://matthewbisicchia.com/biolab/dashboard/welcome`;
     const myDashboardLink = `http://mydashboard.matthewbisicchia.com/`;
+    let resumePDF = `https://github.com/MatthewBisicchia/TwoDVideoGameTemplate`;
 
     let state = {
         descriptionDisplay: 'none',
@@ -56,33 +54,15 @@ const ProjectsPage = () => {
 
                     <div id={styles.items}>
 
-                        <a className={styles.link} href={bioLabLink}> 
-                            <div className={styles.parent}>
-                                <div className={styles.item}>
-
-                                    <div className={styles.itemTitle}>BioLab</div>
-
-                                    <div className={styles.itemDescription}><p>BioLab is a system to help biologists manage laboratory experiments and exercises. This is a separate react app hosted on the same Express server as this site.</p></div>
-                                    
-                                </div>
-
-                                <div className={styles.gitHubLink}>
-                                    <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia/my-website/tree/master/biologists_dashboard" />
-                                </div>
-                            </div>
-                        </a>
-
-                        <br />
-
                         <a className={styles.link} href={myDashboardLink}> 
                             <div className={styles.parent}>
                                 <div className={styles.item} id={styles.myDashboardApp} onMouseEnter={handleMouseEnterOrLeave} onMouseLeave={handleMouseEnterOrLeave}>
 
-                                    <div className={styles.itemTitle} id={styles.myDashboardImage}>My Dashboard App</div>
+                                    <div className={styles.itemTitle}>My Dashboard App</div>
 
-                                    <div style={{ display: "none"  }} className={styles.itemDescription}><p>MyDashboard is a Java Spring Boot and Angular application. It was based on a basic programming challenge completed.</p></div>
+                                    <div style={{ display: "block"  }} className={styles.itemDescription}><p>MyDashboard is a Java Spring Boot and Angular application. It was based on a basic programming challenge completed.</p></div>
                                     
-                                    <img style={{ display: "block" }} id={styles.myDashboardImage} src={imageSource} className={styles.projectImage} />
+                                    {/*<img style={{ display: "block" }} id={styles.myDashboardImage} src={imageSource} className={styles.projectImage} />*/}
 
                                 </div>
 
@@ -93,13 +73,14 @@ const ProjectsPage = () => {
                         </a>
 
                         <br />
-                                
+
+                                                   
                         <a className={styles.link} href={resumePDF} without rel="noopener noreferrer" target="_blank">
                             <div className={styles.parent}>
                                 <div className={styles.item}>
-                                    <div className={styles.itemTitle}>Play Pumpkin Patch</div>
+                                    <div className={styles.itemTitle}>2D Video Game Template</div>
 
-                                    <div className={styles.itemDescription}><p>Pumpkin Patch is a nickname I gave to the 2D Video Game Template I put together in May of 2020. </p></div>
+                                    <div className={styles.itemDescription}><p>A game template for a 2D video game that I put together in May of 2020, with the exception of some minor recent changes. <a style={{fontWeight: 'bold'}}>Note:</a> a web app to see this game is not currently hosted, therefore clicking this box also directs to GitHub instead.</p></div>
                                 
                                 </div>
 
@@ -107,6 +88,25 @@ const ProjectsPage = () => {
                                     <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia/TwoDVideoGameTemplate" />
                                 </div>
                             </div>
+                        </a>
+
+                        <br />
+
+
+                        <a className={styles.link} href={bioLabLink}> 
+                        <div className={styles.parent}>
+                            <div className={styles.item}>
+
+                                <div className={styles.itemTitle}>BioLab</div>
+
+                                <div className={styles.itemDescription}><p><a style={{fontWeight: 'bold'}}>Work in progress:</a> BioLab is a system to help biologists manage laboratory experiments and exercises. This is a separate React app hosted on the same Express server as this site.</p></div>
+                                
+                            </div>
+
+                            <div className={styles.gitHubLink}>
+                                <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia/my-website/tree/master/biologists_dashboard" />
+                            </div>
+                        </div>
                         </a>
 
                         <br />
