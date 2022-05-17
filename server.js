@@ -43,10 +43,10 @@ app.get('/biolab/*', (req, res) => {
 })
 
 // serve Pumpkin Patch:
-app.get('/pumpkinpatch/*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/backend/TwoDVideoGameTemplate/index.html'))
-  pumpkinPatch.start();
-})
+// app.get('/pumpkinpatch/*', (req, res) => {
+//   res.sendFile(path.join(__dirname + '/backend/TwoDVideoGameTemplate/index.html'))
+//   pumpkinPatch.start();
+// })
 
 
 // Define callback function to respond to client's request;
