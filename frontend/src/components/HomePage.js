@@ -48,61 +48,49 @@ const HomePage = () => {
     
                     <br />
 
-                    <div>I love building things. Programming is my favorite pastime. I also enjoy learning concepts in hardware and signal processing.
-                    I am graduating this May from Rowan University in Glassboro, NJ, studying Electrical and Computer Engineering. If you would like to connect, follow me on LinkedIn (link in top right corner), or reach
-                    out to me at matthewbisicchia@gmail.com. I look forward to hearing from you!
+                    <div>I love building things. Programming is my favorite pastime. I also enjoy learning concepts in electronics and signal processing.
+                    I am graduating this May from Rowan University in Glassboro, NJ, studying Electrical and Computer Engineering. 
+                    </div>
+
+                    <br />
+
+                    <div>
+                    If you would like to connect, follow me on LinkedIn (link in top right corner), or contact me by email or phone (info at bottom of this page). I look forward to hearing from you!
                     </div>
 
                     <br />
                     <br />
 
-                    <div>This site is built as an Express application running on Amazon Web Services, serving a React frontend. Feel free to check out the resources below.
+                    <div>
+                    
+                        <a style={{fontSize: '20px', fontWeight: 'bold', margin: '3px'}}>Feel free to have a look around here. At the top right of the header of this page, you can find:</a>
+                    
+                        <div>
+                            <li>some projects at the "Projects" button</li>
+
+                            <li>my resume at the "Resume" button</li>
+
+                            <li>link to my LinkedIn</li>
+
+                            <li>link to my GitHub</li>
+                        </div>
+
                     </div>
 
-                    <br />
-                    <br />
-
-                    <div>Photography courtesy of Michael Bisicchia.
-                    </div>
                 </div>
             
 
                 <div id={styles.menuSection}>
 
-                    <div>
+                    {/*<div>
                     <a style={{fontStyle: 'italic'}}>My Dashboard</a> is an app I built using Spring Boot/Hibernate and Angular (access by clicking on the "My Dashboard" App below). It is running on AWS and connected to a MySQL database.
-                    </div>
-                    
-                    <br />
-                    <br />
+                    </div>*/}
+                     
+                    {/*<div>Below you can also find the GitHub for the <a style={{fontStyle: 'italic'}}>My Dashboard</a> app, and a link to my Resume.
+                      </div>*/}
 
-                    <div>Below you can also find the GitHub for the <a style={{fontStyle: 'italic'}}>My Dashboard</a> app, and a link to my Resume.
-                    </div>
-
-                    <br />
-                    <br />
-
-
-                    <div id={styles.items}>
-
-                        <a className={styles.link} href={gitHubLink}> 
-                            <div className={styles.item}>
-
-                                <div className={styles.itemTitle}>GitHub for the Dashboard App</div>
-
-                                <img src={myDashboardGitHub} id={styles.myDashboardGitHubImage} />
-                            </div>
-                        </a>
-
-                        <a className={styles.link} href={myDashboardLink}> 
-                            <div className={styles.item} id={styles.myDashboardApp} >
-                                <div className={styles.itemTitle} id={styles.myDashboardImage}>My Dashboard App</div>
-
-                                <img src={imageSource} id={styles.myDashboardImage} />
-                                
-                            </div>
-                        </a>
-                                
+                    {/*<div id={styles.items}>
+                               
                         <a className={styles.link} href={resumePDF} without rel="noopener noreferrer" target="_blank">
                             <div className={styles.item}>
                                 <div className={styles.itemTitle}>Resume</div>
@@ -110,11 +98,32 @@ const HomePage = () => {
                                 <img src={resume} id={styles.myResumeImage} />
                             </div>
                         </a>
+   
+                    </div>*/}
+
+                    <div><a style={{fontWeight: 'bold'}}>Email:</a> matthewbisicchia@gmail.com
                     </div>
+                    <br></br>
+                    <div><a style={{fontWeight: 'bold'}}>Mobile Phone:</a> 856-834-0096
+                    </div>
+                    <br></br>
+                    
+                    <div>
+                        <a> <a style={{fontWeight: 'bold'}}>Site Facts:</a> Express Backend, React Frontend, Deployed with AWS</a>
+                        <br></br>
+                        <a style={{fontSize: '15px', fontStyle: 'italic'}}>Except for MyDashBoard app, which has a Spring Boot Backend, Angular Frontend, also Deployed with AWS</a>   
+                    </div>
+
+                    <br></br>
+                    
+                    <div>
+                        <a style={{fontWeight: 'bold'}}>Photography courtesy of <a href="https://www.linkedin.com/in/michael-bisicchia-cpa-88aa9787/">Michael Bisicchia.</a></a>                    
+                    </div>
+                    
                 </div>
             </div>
         </React.Fragment>
-        );
+    );
 }
 
 export default HomePage;
