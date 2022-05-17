@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/biolab/static/css/main.4305bb1a.css",
-    "main.js": "/biolab/static/js/main.06f2dde2.js",
+    "main.css": "/biolab/static/css/main.5430ebae.css",
+    "main.js": "/biolab/static/js/main.3c452a64.js",
     "index.html": "/biolab/index.html",
-    "main.4305bb1a.css.map": "/biolab/static/css/main.4305bb1a.css.map",
-    "main.06f2dde2.js.map": "/biolab/static/js/main.06f2dde2.js.map"
+    "main.5430ebae.css.map": "/biolab/static/css/main.5430ebae.css.map",
+    "main.3c452a64.js.map": "/biolab/static/js/main.3c452a64.js.map"
   },
   "entrypoints": [
-    "static/css/main.4305bb1a.css",
-    "static/js/main.06f2dde2.js"
+    "static/css/main.5430ebae.css",
+    "static/js/main.3c452a64.js"
   ]
 }

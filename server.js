@@ -1,5 +1,11 @@
+const pumpkinPatch = import('./backend/TwoDVideoGameTemplate/GameEngine.js');
+
+//import {start} from './backend/TwoDVideoGameTemplate/GameEngine';
+
 const path = require('path');
 const express = require('express');
+
+
 
 // Create an Express app
 const app = express();
@@ -34,6 +40,12 @@ app.get('/mainSite/*', (req, res) => {
 // serve build of BioLab:
 app.get('/biolab/*', (req, res) => {
   res.sendFile(path.join(__dirname + '/biologists_dashboard/build/index.html'))
+})
+
+// serve Pumpkin Patch:
+app.get('/pumpkinpatch/*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/backend/TwoDVideoGameTemplate/index.html'))
+  pumpkinPatch.start();
 })
 
 
