@@ -8,10 +8,10 @@ const app = express();
 //app.use(express.static(path.join(__dirname, 'frontend', 'build')));
 //app.use(express.static(path.join(__dirname, 'biologists_dashboard', 'build')));
 
-// Serve the website of Matthew Bisicchia:
-app.use(express.static(path.join(__dirname, 'frontend/build')))
+// load build of the Main Site:
+app.use('/mainSite', express.static(path.join(__dirname, 'frontend/build')))
 
-// Serve BioLab (Biologist's Dashboard):
+// load build of BioLab (Biologist's Dashboard):
 app.use('/biolab', express.static(path.join(__dirname, 'biologists_dashboard/build')))
 
 
@@ -21,17 +21,20 @@ app.use('/biolab', express.static(path.join(__dirname, 'biologists_dashboard/bui
 //     res.send("Website of Matthew Bisicchia");
 // })
 
+//Set as Landing Page:
+app.get('/', (req, res) => {
+  res.redirect('/mainSite/home');
+});
 
-// Host builds of each app: 
+// serve build of the Main Site:
+app.get('/mainSite/*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/frontend/build/index.html'));
+});
 
-  // Temporarily Commented Out:
-  // app.get('*', (req, res) => {
-  //   res.sendFile(path.join(__dirname + '/frontend/build/index.html'));
-  // });
-
-  app.get('/biolab/*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/biologists_dashboard/build/index.html'))
-  })
+// serve build of BioLab:
+app.get('/biolab/*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/biologists_dashboard/build/index.html'))
+})
 
 
 // Define callback function to respond to client's request;
@@ -40,5 +43,5 @@ app.use('/biolab', express.static(path.join(__dirname, 'biologists_dashboard/bui
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log("Website of Matthew Bisicchia on port" + port);
+    console.log("matthewbisicchia.com runnning on port " + port);
 });

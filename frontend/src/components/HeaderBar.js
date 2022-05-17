@@ -12,11 +12,11 @@ const HeaderBar = () => {
         <>
             <header id={styles.header}>
 
-                <div style={{color:'white'}}><a href="/home" id={styles.siteName}>matthewbisicchia.com</a></div>
+                <div style={{color:'white'}}><a href="home" id={styles.siteName}>matthewbisicchia.com</a></div>
 
                 <div style={{position: 'absolute', display: 'flex', textAlign: 'center', justifyContent: 'center', justifyItems: 'center', zIndex: 6, right: '5px', top: '5px', height: 30, width: 400}}>
                     
-                    <Link to="projects" style={{textDecoration: 'none'}}>
+                    <Link to="mainSite/projects" style={{textDecoration: 'none'}}>
                         <div id={styles.myProjectsButton}>
                         <a style={{padding: '3px', display: 'flex', alignItems: 'center', textAlign: 'center', justifyContent: 'center'}}>Projects</a>
                         </div>
