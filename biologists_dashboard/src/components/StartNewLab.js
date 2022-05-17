@@ -59,8 +59,18 @@ const StartNewLab = () => {
                     <div className={styles.fieldInput}><input style={{height: '25px', width: '500px'}}></input></div>
                 </div>
 
+                <div style={{display: 'flex', alignItems: 'center', textAlign: 'center', justifyContent: 'center'}}>
+                    <div id={styles.startLabButton}>
+                        <a style={{padding: '3px', display: 'flex', alignItems: 'center', textAlign: 'center', justifyContent: 'center'}}>Start Lab</a>
+                    </div>
+                </div>
+
+                <br></br>
+                <br></br>
+
 
             </div>
+
         </React.Fragment>
     );
 }
