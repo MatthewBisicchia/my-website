@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles/WelcomeScreen.module.css';
+import styles from './WelcomeScreen.module.css';
 import { Link } from 'react-router-dom';
 
 const WelcomeScreen = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
-import Dashboard from './components/Dashboard';
-import WelcomeScreen from './components/WelcomeScreen';
-import StartNewLab from './components/StartNewLab';
+import Dashboard from './components/Dashboard/Dashboard';
+import WelcomeScreen from './components/WelcomeScreen/WelcomeScreen';
+import StartNewLab from './components/StartNewLab/StartNewLab';
 
 const routes = 
 [
