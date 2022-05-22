@@ -12,21 +12,21 @@
     border-top: 2px solid gray;
 } 
 
-.field {
+.textField {
 
     margin: 20px;
     font-size: 20px; 
     font-family: 'Segoe UI Symbol';
 }
 
-.fieldLabel {
+.textFieldLabel {
     font-weight: bold;
     user-select: none;
     display: 'inline-block';
     padding: 10px;
 }
 
-.fieldInput {
+.textFieldInput {
     display: 'inline-block';
     padding: 10px;
 }
