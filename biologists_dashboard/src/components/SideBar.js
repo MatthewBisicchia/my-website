@@ -1,34 +1,74 @@
 import React from 'react';
 import styles from './styles/SideBar.module.css';
-import { Link } from 'react-router-dom';
+import SideBarOption from './SideBarOption';
 
 const SideBar = () => {
+
+
+    const options = [
+        {
+            optionName: 'Start New Lab', 
+            route: 'startNewLab'
+        },
+        {
+            optionName: 'Open Labs', 
+            route: 'openLabs'
+        },
+        {
+            optionName: 'Closed Labs', 
+            route: 'closedLabs'
+        },
+        {
+            optionName: 'Create Issue', 
+            route: 'createIssue'
+        }, 
+        {
+            optionName: 'Open Issues', 
+            route: 'openIssues'
+        },
+        {
+            optionName: 'History', 
+            route: 'history'
+        },
+        {
+            optionName: 'Reports', 
+            route: 'reports'
+        },
+        {
+            optionName: 'Findings', 
+            route: 'findings'
+        },
+        {
+            optionName: 'Archives', 
+            route: 'archives'
+        }
+    ]
 
     return(
         <React.Fragment>               
              
                 <div id={styles.sideBar}>
                     <ul>
-                        <Link to="startNewLab" style={{color: 'black',textDecoration: 'none'}}><li>Start New Lab</li></Link>
-                        <Link to="openLabs" style={{color: 'black',textDecoration: 'none'}}><li>Open Labs</li></Link>
-                        <Link to="closedLabs" style={{color: 'black',textDecoration: 'none'}}><li>Closed Labs</li></Link>
+                        {
+                            options.map(option => {
+
+                                let index = options.indexOf(option);
+
+                                if(index !== 0 && index % 3 === 0)
+                                {
+                                    return ([
+                                        <div className={styles.line}></div>,
+                                        <SideBarOption option={option} />
+                                    ]);
+                                }
+                                else 
+                                {
+                                    return <SideBarOption option={option} />;
+                                }
+                            })
+                        }
                     </ul>
 
-                    <div style={{padding: '20px'}}> <hr></hr> </div>
-
-                    <ul>
-                        <Link to="createIssue" style={{color: 'black',textDecoration: 'none'}}><li>Create Issue</li></Link>
-                        <Link to="openIssues" style={{color: 'black',textDecoration: 'none'}}><li>Open Issues</li></Link>
-                        <Link to="history" style={{color: 'black',textDecoration: 'none'}}><li>History</li></Link>
-                    </ul>
-
-                    <div style={{padding: '20px'}}> <hr></hr> </div>
-
-                    <ul>
-                        <Link to="reports" style={{color: 'black',textDecoration: 'none'}}><li>Reports</li></Link>
-                        <Link to="findings" style={{color: 'black',textDecoration: 'none'}}><li>Findings</li></Link>
-                        <Link to="archives" style={{color: 'black',textDecoration: 'none'}}><li>Archives</li></Link>  
-                    </ul>
                 </div>
             
         </React.Fragment>

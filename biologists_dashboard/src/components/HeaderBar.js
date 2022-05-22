@@ -9,7 +9,11 @@ const HeaderBar = () => {
         <React.Fragment>
             <header id={styles.header}>
 
-                <div id={styles.logo}><Link to="biolab/dashboard/welcome" style={{color: 'black',textDecoration: 'none'}}><p>Bio<a style={{color: 'rgb(53, 53, 226)'}}>Lab</a></p></Link></div>  
+                <div id={styles.logo}>
+                    <Link to="biolab/dashboard/welcome" id={styles.link}>
+                        <a style={{color: 'black'}}>Bio<a style={{color: 'rgb(53, 53, 226)'}}>Lab</a></a>
+                    </Link>
+                </div>  
 
             </header>      
         </React.Fragment>
