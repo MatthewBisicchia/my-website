@@ -49,6 +49,10 @@
     background-color: rgb(255, 235, 163);
 }
 
+#link {
+    text-decoration: none;
+}
+
 #summary {
     /* background-color: rgb(40, 40, 163); */
     background-color: white;
