@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './styles/SideBarOption.module.css';
+import styles from './SideBarOption.module.css';
 import { Link } from 'react-router-dom';
 
 function SideBarOption({option}) {

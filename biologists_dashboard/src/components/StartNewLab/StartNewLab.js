@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles/StartNewLab.module.css';
+import styles from './StartNewLab.module.css';
 
 
 /*  TO DO: Transition this into a modal. Along with Create Issue will be a modal.

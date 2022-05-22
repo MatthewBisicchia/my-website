@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRoutes } from 'react-router-dom';
 import routes from './routes.js';
-import HeaderBar from './components/HeaderBar.js';
+import HeaderBar from './components/HeaderBar/HeaderBar.js';
 
 const App = () => {
 

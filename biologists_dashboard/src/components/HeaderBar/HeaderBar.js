@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles/HeaderBar.module.css';
+import styles from './HeaderBar.module.css';
 import { Link } from 'react-router-dom';
 
 const HeaderBar = () => {
