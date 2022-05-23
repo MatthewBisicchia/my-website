@@ -68,7 +68,6 @@ const SideBar = () => {
                             })
                         }
                     </ul>
-
                 </div>
             
         </React.Fragment>

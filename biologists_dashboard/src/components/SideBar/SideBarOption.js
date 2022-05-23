@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 
 function SideBarOption({option}) {
   return (
-    <Link to={option.route} className={styles.link}><li className={styles.listItem}>{option.optionName}</li></Link>
+    <Link to={option.route} className={styles.link}>
+      <li className={styles.listItem}>{option.optionName}</li>
+    </Link>
   )
 }
 
