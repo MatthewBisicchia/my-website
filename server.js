@@ -1,17 +1,11 @@
 import path from 'path';
 import express from 'express';
 import cors from 'cors';
-
 import { fileURLToPath } from 'url';
-
-//const bodyParser = require('body-parser');
-//const mongoose = require('mongoose');
 
 
 const __filename = fileURLToPath(import.meta.url);
-
 const __dirname = path.dirname(__filename);
-
 
 
 // Overall Express App Setup (Including Main Site and BioLab) //

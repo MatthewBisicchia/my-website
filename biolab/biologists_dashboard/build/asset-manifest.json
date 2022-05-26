@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/biolab/static/css/main.cefe0e1e.css",
+    "main.js": "/biolab/static/js/main.9c640fb5.js",
+    "index.html": "/biolab/index.html",
+    "main.cefe0e1e.css.map": "/biolab/static/css/main.cefe0e1e.css.map",
+    "main.9c640fb5.js.map": "/biolab/static/js/main.9c640fb5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cefe0e1e.css",
+    "static/js/main.9c640fb5.js"
+  ]
+}
