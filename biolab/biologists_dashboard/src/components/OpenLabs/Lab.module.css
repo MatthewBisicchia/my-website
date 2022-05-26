@@ -1,0 +1,55 @@
+.link 
+{
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.parent 
+{
+    display: flex;
+    vertical-align: middle;
+}
+
+.item 
+{
+    display: inline-block;
+    background-color: rgb(241, 238, 238);
+    font-family: 'Segoe UI';
+    font-size: 25px;
+    margin: 5px;
+    height: 150px; 
+    width: 900px;
+    border-radius: 0px;
+    border: 2px solid gray;
+    z-index: 3;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px rgb(177, 168, 168);
+    cursor: pointer;
+    user-select: none;  
+}
+
+.item:hover
+{
+    transition: 0.30s;
+    box-shadow: 0 0 0 4px #000000;
+    border: 2px solid black;
+}
+
+.itemTitle
+{
+    background-color: rgb(12, 87, 130);;
+    /* margin: 10px; */
+    padding: 5px;
+    color: white;
+    font-weight: 400px;
+    z-index: 1;
+}
+
+.itemDescription
+{
+    display: flex;
+    margin: 10px;
+    text-align: center;
+    color: black;
+    font-size: 20px; 
+}
