@@ -1,7 +1,7 @@
 # Monorepo for Matthew Bisicchia's AWS-hosted Node Projects (Personal Website and BioLab)
 
 
-**# FAQ:**
+## FAQ:
 
 **Why is BioLab included in this repo as well?**
 
