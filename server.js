@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Enable Cross Origin Resource Sharing
-app.use(cors({origin: true}));
+app.use(cors({ origin: 'http://matthewbisicchia.com', optionsSuccessStatus: 200 }));
 
 // Load build of the Main Site:
 app.use('/mainSite', express.static(path.join(__dirname, 'frontend/build')))
