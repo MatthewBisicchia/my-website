@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Enable Cross Origin Resource Sharing
-app.use(cors());
+app.use(cors({origin: true}));
 
 // Load build of the Main Site:
 app.use('/mainSite', express.static(path.join(__dirname, 'frontend/build')))
