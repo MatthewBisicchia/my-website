@@ -1,3 +1,10 @@
+/*
+ * Backend Configuration for www.matthewbisicchia.com
+ *
+ * Repository Rebased on 5/26/2022 in order to have the 53 commits throughout Jan. 30 - May 26 have
+ * email matthewbisicchia@gmail.com.
+ */
+
 import path from 'path';
 import express from 'express';
 import bodyParser from 'body-parser';
