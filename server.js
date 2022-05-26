@@ -20,6 +20,13 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// CORS setup:
+app.use(function(request, response, next) {
+  response.header("Access-Control-Allow-Origin", "http://matthewbisicchia.com");
+  response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 // Enable Cross Origin Resource Sharing
 app.use(cors({ origin: 'http://matthewbisicchia.com', optionsSuccessStatus: 200 }));
 
