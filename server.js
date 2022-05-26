@@ -17,18 +17,22 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 // Setup Body Parser:
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit: '50mb', extended: true }));
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true }));
+
 
 // CORS setup:
+
+app.options("*", cors({ origin: 'http://www.matthewbisicchia.com', optionsSuccessStatus: 200 }));
+
 app.use(function(request, response, next) {
-  response.header("Access-Control-Allow-Origin", "http://matthewbisicchia.com");
+  response.header("Access-Control-Allow-Origin", "http://www.matthewbisicchia.com");
   response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
 
 // Enable Cross Origin Resource Sharing
-app.use(cors({ origin: 'http://matthewbisicchia.com', optionsSuccessStatus: 200 }));
+app.use(cors({ origin: 'http://www.matthewbisicchia.com', optionsSuccessStatus: 200 }));
 
 // Load build of the Main Site:
 app.use('/mainSite', express.static(path.join(__dirname, 'frontend/build')))
