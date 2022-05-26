@@ -74,6 +74,23 @@ const ProjectsPage = () => {
 
                         <br />
 
+                        <a className={styles.link} href={bioLabLink}> 
+                        <div className={styles.parent}>
+                            <div className={styles.item}>
+
+                                <div className={styles.itemTitle}>BioLab</div>
+
+                                <div className={styles.itemDescription}><p><a style={{fontWeight: 'bold'}}>Work in progress:</a> BioLab is a system to help biologists manage laboratory experiments and exercises. This is a separate React app hosted on the same Express server as this site. It specifies an RESTful API to communicate with a MySQL database hosted in AWS RDS.</p></div>
+                                
+                            </div>
+
+                            <div className={styles.gitHubLink}>
+                                <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia/my-website/tree/master/biologists_dashboard" />
+                            </div>
+                        </div>
+                        </a>
+
+                        <br />
                                                    
                         <a className={styles.link} href={resumePDF} without rel="noopener noreferrer" target="_blank">
                             <div className={styles.parent}>
@@ -90,26 +107,6 @@ const ProjectsPage = () => {
                             </div>
                         </a>
 
-                        <br />
-
-
-                        <a className={styles.link} href={bioLabLink}> 
-                        <div className={styles.parent}>
-                            <div className={styles.item}>
-
-                                <div className={styles.itemTitle}>BioLab</div>
-
-                                <div className={styles.itemDescription}><p><a style={{fontWeight: 'bold'}}>Work in progress:</a> BioLab is a system to help biologists manage laboratory experiments and exercises. This is a separate React app hosted on the same Express server as this site.</p></div>
-                                
-                            </div>
-
-                            <div className={styles.gitHubLink}>
-                                <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia/my-website/tree/master/biologists_dashboard" />
-                            </div>
-                        </div>
-                        </a>
-
-                        <br />
                     </div>
                 </div>
             </div>
