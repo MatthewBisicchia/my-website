@@ -1,7 +1,7 @@
 /*
  * Backend Configuration for www.matthewbisicchia.com
  *
- * Repository Rebased on 5/26/2022 in order to have the 53 commits throughout Jan. 30 - May 26 have
+ * Repository Rebased on 5/26/2022 in order to have commits throughout Jan. 30 - May 26 have
  * email matthewbisicchia@gmail.com.
  */
 
