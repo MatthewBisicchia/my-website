@@ -1,7 +1,9 @@
 import path from 'path';
 import express from 'express';
+import bodyParser from 'body-parser';
 import cors from 'cors';
 import { fileURLToPath } from 'url';
+
 
 
 const __filename = fileURLToPath(import.meta.url);
@@ -13,6 +15,10 @@ const __dirname = path.dirname(__filename);
 
 // Create an Express app
 const app = express();
+
+// Setup Body Parser:
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // Enable Cross Origin Resource Sharing
 app.use(cors());
