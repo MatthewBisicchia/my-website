@@ -12,7 +12,7 @@ const url_main = "http://www.matthewbisicchia.com";
 const corsOptions = {
    url_main,
    headers: {
-    'Access-Control-Allow-Origin' : 'http://www.matthewbisicchia.com',
+    'Access-Control-Allow-Origin' : 'http://www.matthewbisicchia.com/*',
     'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH',
     }
 }
