@@ -13,9 +13,6 @@ const database = mysql.createConnection({
     database: process.env.AWS_CONFIGURATION_VAR_1
 });
 
-console.log("TESTING ENVIRONMENT VARIABLE:")
-console.log(process.env.AWS_CONFIGURATION_VAR_1);
-
 // Connect to BioLab MySQL database:
 database.connect( (error) => {
     if(error) 
@@ -28,29 +25,5 @@ database.connect( (error) => {
         console.log('Connected to BioLab Database');
     }
 });
-
-// Create Table for Labs:
-// database.query('CREATE TABLE labs(id int AUTO_INCREMENT, name VARCHAR(255), type VARCHAR(255), details VARCHAR(255), toxic_chemicals VARCHAR(255), steps VARCHAR(255), connectedDevices VARCHAR(255), automateJobsProcesses VARCHAR(255), PRIMARY KEY(id))', (error, data) => {
-//     if(error) {
-//         throw error;
-//     }
-//     else {
-//         console.log(data);
-//         console.log('TABLE for labs CREATED');
-//     }
-// });
-
-
-// Delete Table for Labs:
-// database.query('DROP TABLE labs', (error, data) => {
-//         if(error) {
-//             throw error;
-//         }
-//         else {
-//             console.log(data);
-//             console.log('TABLE for labs CREATED');
-//         }
-//     });
-
 
 export default database;

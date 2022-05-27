@@ -33,16 +33,20 @@ export const createNewLab = async (request, response) => {
 
     try 
     {
-        //dummy test newLab; will replace with data from the request
+        const { name, details, type, toxic_chemicals, steps, connectedDevices, automateJobsProcesses } = request.body;
+
         let newLab = {
-            name: 'Lab1',
-            type: 'Biology',
-            details: 'First lab created, dummy values',
-            toxic_chemicals: 'None',
-            steps: 'None',
-            connectedDevices: 'Test Device',
-            automateJobsProcesses: 'Determine DNA Sequence'
+            name: name,
+            details: details,
+            type: type,
+            toxic_chemicals: toxic_chemicals,
+            steps: steps,
+            connectedDevices: connectedDevices,
+            automateJobsProcesses: automateJobsProcesses
         }
+
+        console.log("newLab as formed in backend:")
+        console.log(newLab);
 
 
         await database.query(`INSERT INTO labs SET ?`, newLab, (error, data) => {
@@ -52,7 +56,7 @@ export const createNewLab = async (request, response) => {
             }
             else 
             {
-                response.json(data);
+                response.json(newLab);
             }
         });
     }
