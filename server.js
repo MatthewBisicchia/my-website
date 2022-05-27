@@ -23,6 +23,8 @@ const __dirname = path.dirname(__filename);
 // Create an Express app
 const app = express();
 
+app.use(express.json());
+
 // Setup Body Parser:
 app.use(bodyParser.json({limit: '50mb', extended: true }));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true }));
