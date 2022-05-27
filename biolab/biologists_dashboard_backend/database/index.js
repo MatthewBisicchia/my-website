@@ -6,12 +6,14 @@ let decrypt_string_ = decrypt_.toString(cryptojs.enc.Utf8)
 
 // Create connection to BioLab MySQL database:
 const database = mysql.createConnection({
-    host: process.env.AWS_CONFIGURAT,
+    host: process.env.AWS_CONFIGURATION_VAR_5,
     port: process.env.AWS_CONFIGURATION_VAR_4,
     user: process.env.AWS_CONFIGURATION_VAR_3,
     password: decrypt_string_,
     database: process.env.AWS_CONFIGURATION_VAR_6
 });
+
+console.log(process.env.AWS_CONFIGURATION_VAR_6);
 
 // Connect to BioLab MySQL database:
 database.connect( (error) => {
