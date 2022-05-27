@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true }));
 
 // CORS setup:
 
-app.options("*", cors({ origin: 'http://www.matthewbisicchia.com', optionsSuccessStatus: 200 }));
+//app.options("*", cors({ origin: 'http://www.matthewbisicchia.com', optionsSuccessStatus: 200 }));
 
 app.use(function(request, response, next) {
   response.header("Access-Control-Allow-Origin", '*');
@@ -39,13 +39,18 @@ app.use(function(request, response, next) {
 });
 
 // Enable Cross Origin Resource Sharing
-app.use(cors({ origin: 'http://www.matthewbisicchia.com', optionsSuccessStatus: 200 }));
+app.use(cors({ origin: '*', optionsSuccessStatus: 200 }));
 
 // Load build of the Main Site:
 app.use('/mainSite', express.static(path.join(__dirname, 'frontend/build')))
 
 // Load build of BioLab (Biologist's Dashboard):
 app.use('/biolab', express.static(path.join(__dirname, 'biolab/biologists_dashboard/build')))
+
+// BioLab Backend Setup: //
+import labs_routes from './biolab/biologists_dashboard_backend/routes/labs_routes.js';
+app.use('/biolab_api/labs', labs_routes);
+
 
 // Set as Landing Page:
 app.get('/', (req, res) => {
@@ -69,10 +74,3 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log("matthewbisicchia.com runnning on port " + port);
 });
-
-
-// BioLab Backend Setup: //
-
-import labs_routes from './biolab/biologists_dashboard_backend/routes/labs_routes.js';
-
-app.use('/biolab_api/labs', labs_routes);
