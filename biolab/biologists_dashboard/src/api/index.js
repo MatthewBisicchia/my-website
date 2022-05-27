@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
 
-const url_getAllLabs = 'http://www.matthewbisicchia.com/biolab_api/labs/getAllLabs';
-const url_postLab = 'http://www.matthewbisicchia.com/biolab_api/labs/createNewLab';
+const url_getAllLabs = 'http://matthewbisicchia.com/biolab_api/labs/getAllLabs';
+const url_postLab = 'http://matthewbisicchia.com/biolab_api/labs/createNewLab';
 
 // const url_getAllLabs = 'http://localhost:3000/biolab_api/labs/getAllLabs';
 // const url_postLab = 'http://localhost:3000/biolab_api/labs/createNewLab';
