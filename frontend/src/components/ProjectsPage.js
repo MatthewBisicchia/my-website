@@ -65,7 +65,7 @@ const ProjectsPage = () => {
                             </div>
 
                             <div className={styles.gitHubLink}>
-                                <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia/my-website/tree/master/biologists_dashboard" />
+                                <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia/my-website/tree/master/biolab" />
                             </div>
                         </div>
                         </a>
