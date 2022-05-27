@@ -13,14 +13,17 @@ export const getLabs = () => (dispatch) => {
     }
 }
 
-// export const createLab = (newLab) => async (dispatch) => {
-//     try 
-//     {
-//         const { lab } = await api.createLab(newLab);
-//         dispatch({type: 'CREATE', payload: lab});
-//     }
-//     catch(error) 
-//     {
-//         console.log(error.message);
-//     }
-// }
+export const createLab = (newLab) => async (dispatch) => {
+    try 
+    {
+        api.createLab(newLab).then((response) => { 
+            console.log("actions/labs - response received from backend:");
+            console.log(response.data);
+            dispatch({ type: 'CREATE', payload: response.data });
+        });
+    }
+    catch(error) 
+    {
+        console.log(error.message);
+    }
+}

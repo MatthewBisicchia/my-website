@@ -7,8 +7,6 @@ import HeaderBar from './components/HeaderBar/HeaderBar.js';
 
 const App = () => {
 
-    //const [id, setId] = useState(0);
-
     const dispatch = useDispatch();
 
     useEffect(() => {
