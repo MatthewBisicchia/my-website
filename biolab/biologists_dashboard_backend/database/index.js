@@ -1,19 +1,19 @@
 import mysql from 'mysql';
 import cryptojs from "crypto-js";
 
-let decrypt_ = cryptojs.AES.decrypt(AWS_CONFIGURATION_VAR_2, AWS_CONFIGURATION_VAR_1);
+let decrypt_ = cryptojs.AES.decrypt(process.env.AWS_CONFIGURATION_VAR_2, process.env.AWS_CONFIGURATION_VAR_1);
 let decrypt_string_ = decrypt_.toString(cryptojs.enc.Utf8)
 
 // Create connection to BioLab MySQL database:
 const database = mysql.createConnection({
-    host: AWS_CONFIGURATION_VAR_5,
-    port: AWS_CONFIGURATION_VAR_4,
-    user: AWS_CONFIGURATION_VAR_3,
+    host: process.env.AWS_CONFIGURATION_VAR_5,
+    port: process.env.AWS_CONFIGURATION_VAR_4,
+    user: process.env.AWS_CONFIGURATION_VAR_3,
     password: decrypt_string_,
-    database: AWS_CONFIGURATION_VAR_6
+    database: process.env.AWS_CONFIGURATION_VAR_6
 });
 
-console.log(AWS_CONFIGURATION_VAR_6);
+console.log(process.env.AWS_CONFIGURATION_VAR_6);
 
 // Connect to BioLab MySQL database:
 database.connect( (error) => {
