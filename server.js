@@ -1,11 +1,7 @@
 /*
  * Backend Configuration for www.matthewbisicchia.com
  *
-<<<<<<< HEAD
  * Repository Rebased on 5/26/2022 in order to have commits throughout Jan. 30 - May 26 have
-=======
- * Repository Rebased on 5/26/2022 in order to have the 53 commits throughout Jan. 30 - May 26 have
->>>>>>> 652506ea097dc59889a6d8c2cc15f3102c5e8d82
  * email matthewbisicchia@gmail.com.
  */
 
@@ -37,7 +33,7 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true }));
 app.options("*", cors({ origin: 'http://www.matthewbisicchia.com', optionsSuccessStatus: 200 }));
 
 app.use(function(request, response, next) {
-  response.header("Access-Control-Allow-Origin", "http://www.matthewbisicchia.com");
+  response.header("Access-Control-Allow-Origin", '*');
   response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
