@@ -65,5 +65,27 @@ export const createNewLab = async (request, response) => {
         response.sendStatus(409);
         console.log(error);
     }
+}
+
+export const deleteAllLabs = async (request, response) => {
+
+    try
+    { 
+        let labs = await database.query(`DELETE * FROM labs`, (error, data) => {
+            if(error) 
+            {
+                throw error;
+            }
+            else 
+            {
+                response.status(200).json(data);
+            }
+        });
+    }
+    catch(error)
+    {
+        response.sendStatus(404);
+        console.log(error);
+    }
 
 }
