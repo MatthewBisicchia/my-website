@@ -71,7 +71,7 @@ export const deleteAllLabs = async (request, response) => {
 
     try
     { 
-        let labs = await database.query(`DELETE * FROM labs`, (error, data) => {
+        let labs = await database.query(`DELETE FROM labs`, (error, data) => {
             if(error) 
             {
                 throw error;
