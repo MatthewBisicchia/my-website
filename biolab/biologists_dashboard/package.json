@@ -1,7 +1,7 @@
 {
   "name": "biolab",
   "version": "0.1.0",
-  "proxy": "http://localhost:3000/biolab/",
+  "proxy": "http://matthewbisicchia.com/biolab/",
   "homepage": "/biolab",
   "private": true,
   "dependencies": {
