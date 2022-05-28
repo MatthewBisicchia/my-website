@@ -35,6 +35,7 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true }));
 //app.options("*", cors({ origin: 'http://www.matthewbisicchia.com', optionsSuccessStatus: 200 }));
 
 app.use(function(request, response, next) {
+  response.status(200);
   response.header("Access-Control-Allow-Origin", '*');
   response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
@@ -55,18 +56,18 @@ app.use('/biolab_api/labs', labs_routes);
 
 
 // Set as Landing Page:
-app.get('/', (req, res) => {
-  res.redirect('/mainSite/home');
+app.get('/', (request, response) => {
+  response.status(200).redirect('/mainSite/home');
 });
 
 // Serve build of the Main Site:
-app.get('/mainSite/*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/frontend/build/index.html'));
+app.get('/mainSite/*', (request, response) => {
+  response.status(200).sendFile(path.join(__dirname + '/frontend/build/index.html'));
 });
 
 // Serve build of BioLab:
-app.get('/biolab/*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/biolab/biologists_dashboard/build/index.html'))
+app.get('/biolab/*', (request, response) => {
+  response.status(200).sendFile(path.join(__dirname + '/biolab/biologists_dashboard/build/index.html'))
 })
 
 // Define callback function to respond to client's request;

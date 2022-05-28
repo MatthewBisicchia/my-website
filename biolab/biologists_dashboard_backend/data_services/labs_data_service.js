@@ -12,13 +12,13 @@ export const getAllLabs = async (request, response) => {
             }
             else 
             {
-                response.json(data);
+                response.status(200).json(data);
             }
         });
     }
     catch(error)
     {
-        response.sendStatus(500);
+        response.sendStatus(404);
         console.log(error);
     }
 
@@ -56,13 +56,13 @@ export const createNewLab = async (request, response) => {
             }
             else 
             {
-                response.json(newLab);
+                response.status(201).json(newLab);
             }
         });
     }
     catch(error)
     {
-        response.sendStatus(500);
+        response.sendStatus(409);
         console.log(error);
     }
 
