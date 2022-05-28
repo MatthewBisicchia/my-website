@@ -15,7 +15,7 @@ const ProjectsPage = () => {
     };
 
     let handleMouseEnterOrLeave = () => {
-        if(state.descriptionDisplay == "none")
+        if(state.descriptionDisplay === "none")
         {
             state.descriptionDisplay = "block";
             state.imageDisplay = "none"
