@@ -69,6 +69,8 @@ export const createNewLab = async (request, response) => {
 
 export const deleteAllLabs = async (request, response) => {
 
+    console.log('Going to delete all labs from database');
+
     try
     { 
         let labs = await database.query(`DELETE FROM labs`, (error, data) => {
