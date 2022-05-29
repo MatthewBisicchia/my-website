@@ -5,7 +5,7 @@ const url_postLab = 'http://matthewbisicchia.com/biolab_api/labs/createNewLab';
 
 const configuration = {
    headers: {
-    'Access-Control-Allow-Origin' : '*',
+    'Access-Control-Allow-Origin' : 'http://matthewbisicchia.com',
     'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH',
     }
 }

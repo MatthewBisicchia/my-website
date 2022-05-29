@@ -36,7 +36,7 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true }));
 
 app.use(function(request, response, next) {
   response.status(200);
-  response.header("Access-Control-Allow-Origin", '*');
+  response.header("Access-Control-Allow-Origin", 'http://matthewbisicchia.com');
   response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
