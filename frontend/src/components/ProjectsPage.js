@@ -5,8 +5,8 @@ import { SocialIcon } from 'react-social-icons';
 
 const ProjectsPage = () => {
 
-    const bioLabLink = `http://matthewbisicchia.com/biolab/dashboard/welcome`;
-    const myDashboardLink = `http://mydashboard.matthewbisicchia.com/`;
+    const bioLabLink = `https://matthewbisicchia.com/biolab/dashboard/welcome`;
+    const myDashboardLink = `https://mydashboard.matthewbisicchia.com/`;
     let resumePDF = `https://github.com/MatthewBisicchia/TwoDVideoGameTemplate`;
 
     let state = {

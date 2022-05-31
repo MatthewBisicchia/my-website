@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-const url_getAllLabs = 'http://matthewbisicchia.com/biolab_api/labs/getAllLabs';
-const url_postLab = 'http://matthewbisicchia.com/biolab_api/labs/createNewLab';
+const url_getAllLabs = 'https://matthewbisicchia.com/biolab_api/labs/getAllLabs';
+const url_postLab = 'https://matthewbisicchia.com/biolab_api/labs/createNewLab';
 
 const configuration = {
    headers: {
-    'Access-Control-Allow-Origin' : 'http://matthewbisicchia.com',
+    'Access-Control-Allow-Origin' : 'https://matthewbisicchia.com',
     'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH',
     }
 }
