@@ -72,6 +72,8 @@ const ProjectsPage = () => {
 
                         <br />
 
+                     
+
                         <a className={styles.link} href={myDashboardLink}> 
                             <div className={styles.parent}>
                                 <div className={styles.item} id={styles.myDashboardApp} onMouseEnter={handleMouseEnterOrLeave} onMouseLeave={handleMouseEnterOrLeave}>
@@ -80,7 +82,7 @@ const ProjectsPage = () => {
 
                                     <div style={{ display: "block"  }} className={styles.itemDescription}><p>MyDashboard is a Java Spring Boot and Angular application. It specifies a RESTful API to communicate with a MySQL database. Both the database and the .WAR file are hosted on Amazon Web Services. It uses Maven to build the Java application.</p></div>
                                     
-                                    {/*<img style={{ display: "block" }} id={styles.myDashboardImage} src={imageSource} className={styles.projectImage} />*/}
+                
 
                                 </div>
 
@@ -107,8 +109,11 @@ const ProjectsPage = () => {
                             </div>
                         </a>
 
+                        
+
                     </div>
                 </div>
+   
             </div>
         </React.Fragment>
     );

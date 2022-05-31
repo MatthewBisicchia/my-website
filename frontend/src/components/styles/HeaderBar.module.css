@@ -94,3 +94,38 @@ li {
     padding: 5px;
 }
 
+#testHeader {
+    display: none;
+}
+
+#headerButtons {
+
+    /* position: 'absolute', display: 'flex', textAlign: 'center', justifyContent: 'center', justifyItems: 'center', zIndex: 6, right: '5px', top: '5px', height: 30, width: 400}} */
+    
+    display: block;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    z-index: 6;
+    right: 5px;
+    top: 5px;
+    height: 30;
+    width: 400;
+}
+
+
+@media (max-width: 990px) {
+
+    #header {
+        height: 100px;
+    }
+
+    #headerButtons {
+        margin-top: 1.5%;
+        justify-content: center;
+        position: static;
+    }
+
+  
+}

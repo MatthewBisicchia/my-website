@@ -4,6 +4,8 @@ import matthew from '../images/Matthew.png';
 import imageSource from '../images/myDashboard.JPG';
 import resume from '../images/resume.JPG';
 import myDashboardGitHub from '../images/github.JPG';
+import { Link } from 'react-router-dom';
+import { SocialIcon } from 'react-social-icons';
 import resumePDF from '../assets/Matthew_Bisicchia_Resume.pdf';
 
 const HomePage = () => {
@@ -15,21 +17,18 @@ const HomePage = () => {
         <React.Fragment>
             <div>
                 <div id={styles.topSection}>
-                    <div className={styles.containerForBlurEffect}>
+                    <div id={styles.nameAndProfession}>
+                        <div style={{whiteSpace: 'preWrap'}}>
+                            <div style={{fontSize: '40px', fontWeight: 500}}>Matthew Bisicchia</div>
+                        &#10;- Junior Engineer -</div>
+                    </div>
 
-                        <div id={styles.nameAndProfession}>
-                            <div style={{whiteSpace: 'preWrap'}}>
-                                <div style={{fontSize: '40px', fontWeight: 500}}>Matthew Bisicchia</div>
-                            &#10;- Junior Engineer -</div>
-                        </div>
+                    <div id={styles.profilePicture}>
+                        <img src={matthew} id={styles.profilePicture} />
+                    </div>
 
-                        <div id={styles.profilePicture}>
-                            <img src={matthew} id={styles.profilePicture} />
-                        </div>
-
-                        <div id={styles.scrollDown}>
-                            Scroll down to Learn More
-                        </div>
+                    <div id={styles.scrollDown}>
+                        Scroll down to Learn More
                     </div>
                 </div>
 
@@ -117,7 +116,7 @@ const HomePage = () => {
                     <br></br>
                     
                     <div>
-                        <a style={{fontWeight: 'bold'}}>Photography courtesy of <a href="https://www.linkedin.com/in/michael-bisicchia-cpa-88aa9787/">Michael Bisicchia.</a></a>                    
+                        <a style={{fontWeight: 'bold'}}>Photography courtesy of <a href="https://www.linkedin.com/in/michael-bisicchia-cpa-88aa9787/"><br></br>Michael Bisicchia</a></a>                    
                     </div>
                     
                 </div>

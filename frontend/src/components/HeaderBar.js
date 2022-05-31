@@ -14,7 +14,7 @@ const HeaderBar = () => {
 
                 <div style={{color:'white'}}><a href="home" id={styles.siteName}>matthewbisicchia.com</a></div>
 
-                <div style={{position: 'absolute', display: 'flex', textAlign: 'center', justifyContent: 'center', justifyItems: 'center', zIndex: 6, right: '5px', top: '5px', height: 30, width: 400}}>
+                <div id={styles.headerButtons}>
                     
                     <Link to="mainSite/projects" style={{textDecoration: 'none'}}>
                         <div id={styles.myProjectsButton}>
@@ -31,6 +31,8 @@ const HeaderBar = () => {
                     <SocialIcon style={{height: 40, width: 40, marginRight: '10px'}}  url="https://www.linkedin.com/in/matthew-bisicchia-72339919b/" />
                     <SocialIcon bgColor="#ffffff"style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia" />
                 </div>
+
+
 
             </header>
 

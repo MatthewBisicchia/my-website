@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "proxy": "http://matthewbisicchia.com/mainSite/",
+  "proxy": "http://localhost:3000/mainSite/",
   "homepage": "/mainSite",
   "private": true,
   "dependencies": {
