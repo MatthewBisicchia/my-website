@@ -42,7 +42,7 @@ app.use(function(request, response, next) {
 });
 
 // Enable Cross Origin Resource Sharing
-app.use(cors({ origin: '*', optionsSuccessStatus: 200 }));
+app.use(cors({ origin: 'https://matthewbisicchia.com', optionsSuccessStatus: 200 }));
 
 // Load build of the Main Site:
 app.use('/mainSite', express.static(path.join(__dirname, 'frontend/build')))
