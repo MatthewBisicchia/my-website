@@ -13,6 +13,8 @@ const database = mysql.createConnection({
     database: process.env.AWS_CONFIGURATION_VAR_1
 });
 
+console.log("Attempted Connection to database " + process.env.AWS_CONFIGURATION_VAR_1);
+
 // Connect to BioLab MySQL database:
 database.connect( (error) => {
     if(error) 
