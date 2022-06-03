@@ -13,11 +13,10 @@ import { fileURLToPath } from 'url';
 
 
 
+// Overall Express App Setup (Including Main Site and BioLab) //
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-
-// Overall Express App Setup (Including Main Site and BioLab) //
 
 
 // Create an Express app
@@ -31,9 +30,6 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true }));
 
 
 // CORS setup:
-
-//app.options("*", cors({ origin: 'http://www.matthewbisicchia.com', optionsSuccessStatus: 200 }));
-
 app.use(function(request, response, next) {
   response.status(200);
   response.header("Access-Control-Allow-Origin", 'https://matthewbisicchia.com');

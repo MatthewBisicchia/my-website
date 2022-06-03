@@ -11,7 +11,7 @@ import resumePDF from '../assets/Matthew_Bisicchia_Resume.pdf';
 const HomePage = () => {
 
     const gitHubLink = `https://github.com/MatthewBisicchia/Spring_and_Angular_WebApp`;
-    const myDashboardLink = `http://mydashboard.matthewbisicchia.com/`;
+    const myDashboardLink = `https://mydashboard.matthewbisicchia.com/`;
    
     return(
         <React.Fragment>
