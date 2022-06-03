@@ -6,7 +6,7 @@ import { SocialIcon } from 'react-social-icons';
 const ProjectsPage = () => {
 
     const bioLabLink = `https://matthewbisicchia.com/biolab/dashboard/welcome`;
-    const myDashboardLink = `https://mydashboard.matthewbisicchia.com/`;
+    const myDashboardLink = `https://github.com/MatthewBisicchia/Spring_and_Angular_WebApp`;
     let resumePDF = `https://github.com/MatthewBisicchia/TwoDVideoGameTemplate`;
 
     let state = {
@@ -80,7 +80,7 @@ const ProjectsPage = () => {
 
                                     <div className={styles.itemTitle}>My Dashboard App</div>
 
-                                    <div style={{ display: "block"  }} className={styles.itemDescription}><p>MyDashboard is a Java Spring Boot and Angular application. It specifies a RESTful API to communicate with a MySQL database. Both the database and the .WAR file are hosted on Amazon Web Services. It uses Maven to build the Java application.</p></div>
+                                    <div style={{ display: "block"  }} className={styles.itemDescription}><p>MyDashboard is a Java Spring Boot and Angular app. It specifies a RESTful API to communicate with a MySQL database. It uses Maven to build the Java application. It is not currently hosted, therefore clicking this box also directs to GitHub instead.</p></div>
                                     
                 
 
