@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/mainSite/static/css/main.8d4b1e3f.css",
-    "main.js": "/mainSite/static/js/main.705a8893.js",
+    "main.css": "/mainSite/static/css/main.525da04e.css",
+    "main.js": "/mainSite/static/js/main.3cd07ecf.js",
     "static/media/philly3.JPG": "/mainSite/static/media/philly3.14499ccc292008708dd4.JPG",
     "static/media/Matthew.png": "/mainSite/static/media/Matthew.73d9c07a99faaf181204.png",
     "static/media/philly2.jpg": "/mainSite/static/media/philly2.bd544958583ee77fcd04.jpg",
     "static/media/philly1.JPG": "/mainSite/static/media/philly1.5de281f2421a5f878a66.JPG",
     "static/media/github.JPG": "/mainSite/static/media/github.693b85e47941a3c8dc6e.JPG",
-    "static/media/Matthew_Bisicchia_Resume.pdf": "/mainSite/static/media/Matthew_Bisicchia_Resume.e7b77e158f8755bc396a.pdf",
+    "static/media/Matthew_Bisicchia_Resume.pdf": "/mainSite/static/media/Matthew_Bisicchia_Resume.84777236e644811324a2.pdf",
     "static/media/myDashboard.JPG": "/mainSite/static/media/myDashboard.b3db4eabfefbc2fcd9e6.JPG",
     "static/media/resume.JPG": "/mainSite/static/media/resume.a3cebb8f16255ca1f512.JPG",
     "index.html": "/mainSite/index.html",
-    "main.8d4b1e3f.css.map": "/mainSite/static/css/main.8d4b1e3f.css.map",
-    "main.705a8893.js.map": "/mainSite/static/js/main.705a8893.js.map"
+    "main.525da04e.css.map": "/mainSite/static/css/main.525da04e.css.map",
+    "main.3cd07ecf.js.map": "/mainSite/static/js/main.3cd07ecf.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d4b1e3f.css",
-    "static/js/main.705a8893.js"
+    "static/css/main.525da04e.css",
+    "static/js/main.3cd07ecf.js"
   ]
 }

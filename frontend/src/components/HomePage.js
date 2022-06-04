@@ -19,8 +19,8 @@ const HomePage = () => {
                 <div id={styles.topSection}>
                     <div id={styles.nameAndProfession}>
                         <div style={{whiteSpace: 'preWrap'}}>
-                            <div style={{fontSize: '40px', fontWeight: 500}}>Matthew Bisicchia</div>
-                        &#10;- Junior Engineer -</div>
+                            <div style={{fontSize: '30px', fontWeight: 500}}>Matthew Joseph Bisicchia</div>
+                        &#10;</div>
                     </div>
 
                     <div id={styles.profilePicture}>
