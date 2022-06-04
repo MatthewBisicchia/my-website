@@ -6,7 +6,8 @@ import { SocialIcon } from 'react-social-icons';
 const ProjectsPage = () => {
 
     const bioLabLink = `https://matthewbisicchia.com/biolab/dashboard/welcome`;
-    const myDashboardLink = `https://mydashboard.matthewbisicchia.com`;
+    //const myDashboardLink = `https://mydashboard.matthewbisicchia.com`;
+    const myDashboardLink = `https://github.com/MatthewBisicchia/Spring_and_Angular_WebApp`;
     let resumePDF = `https://github.com/MatthewBisicchia/TwoDVideoGameTemplate`;
 
     let state = {
@@ -78,7 +79,7 @@ const ProjectsPage = () => {
                             <div className={styles.parent}>
                                 <div className={styles.item} id={styles.myDashboardApp} onMouseEnter={handleMouseEnterOrLeave} onMouseLeave={handleMouseEnterOrLeave}>
 
-                                    <div className={styles.itemTitle}>My Dashboard App</div>
+                                    <div className={styles.itemTitle}>(Site not currently hosted): My Dashboard App</div>
 
                                     <div style={{ display: "block"  }} className={styles.itemDescription}><p>The purpose of the project was for experience of the deployment process, rather than its limited functionality. Java Spring Boot and Angular app built with Maven. It specifies a RESTful API to communicate with a MySQL database (AWS RDS).</p></div>
                                     
