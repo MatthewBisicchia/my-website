@@ -39,15 +39,13 @@ const ProjectsPage = () => {
 
                 <div id={styles.headingBlock}>
       
-                    <p> <a style={{fontWeight: 'bold', fontSize: '30px'}}>Projects</a><a style={{fontStyle: 'italic', fontSize: '18px'}}> - <a style={{fontWeight: 'bold'}}>Click Box</a> to Access the Web App; <a style={{fontWeight: 'bold'}}>Link to GitHub</a> for project is to the right of app link</a></p>
-        
+                    <p> <a style={{whiteSpace: 'preWrap', fontWeight: 'bold', fontSize: '30px'}}>Projects</a><a style={{fontStyle: 'italic', fontSize: '18px'}}> - <a style={{fontWeight: 'bold'}}>Click Box</a> to Access the Web App; <a style={{fontWeight: 'bold'}}>Link to GitHub</a> for project is to the right of app link</a></p>
+
+                    <p> <a style={{fontSize: '18px'}}><a style={{fontWeight: 'bold'}}>Note: </a>BioLab and MyDashboard do not yet have Mobile Friendly UI</a> </p>
+              
                 </div>
 
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
+               
              
                   
             
