@@ -34,7 +34,7 @@ const HomePage = () => {
 
                 <div id={styles.middleSection}>
 
-                    <div class={styles.interests}>Programmer & Electronics Enthusiast</div>
+                    <div className={styles.interests}>Programmer & Electronics Enthusiast</div>
                     <div id={styles.ethic}> Team Player & Self Driven</div>
 
                 </div>
@@ -107,7 +107,7 @@ const HomePage = () => {
                     <br></br>
                     
                     <div>
-                        <a> <a style={{fontWeight: 'bold'}}>Site Facts:</a> Express Backend, React Frontend, Deployed with AWS</a>
+                        <div> <a style={{fontWeight: 'bold'}}>Site Facts:</a> Express Backend, React Frontend, Deployed with AWS</div>
                         <br></br>
                         <a style={{fontSize: '15px', fontStyle: 'italic'}}>Except for MyDashBoard app, which has a Spring Boot Backend, Angular Frontend, also Deployed with AWS</a>   
                     </div>
@@ -115,7 +115,7 @@ const HomePage = () => {
                     <br></br>
                     
                     <div>
-                        <a style={{fontWeight: 'bold'}}>Photography courtesy of <a href="https://www.linkedin.com/in/michael-bisicchia-cpa-88aa9787/"><br></br>Michael Bisicchia</a></a>                    
+                        <div style={{fontWeight: 'bold'}}>Photography courtesy of <a href="https://www.linkedin.com/in/michael-bisicchia-cpa-88aa9787/"><br></br>Michael Bisicchia</a></div>                    
                     </div>
                     
                 </div>

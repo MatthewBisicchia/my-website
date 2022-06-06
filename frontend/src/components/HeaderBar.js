@@ -24,7 +24,7 @@ const HeaderBar = () => {
 
                     <a href={resumePDF} style={{textDecoration: 'none'}}>
                         <div id={styles.myResumeButton}>
-                        <a style={{padding: '3px', display: 'flex', alignItems: 'center', textAlign: 'center', justifyContent: 'center'}}>Resume</a>
+                        <div style={{padding: '3px', display: 'flex', alignItems: 'center', textAlign: 'center', justifyContent: 'center'}}>Resume</div>
                         </div>
                     </a>
 

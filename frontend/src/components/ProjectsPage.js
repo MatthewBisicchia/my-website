@@ -39,9 +39,9 @@ const ProjectsPage = () => {
 
                 <div id={styles.headingBlock}>
       
-                    <p> <a style={{whiteSpace: 'preWrap', fontWeight: 'bold', fontSize: '30px'}}>Projects</a><a style={{fontStyle: 'italic', fontSize: '18px'}}> - <a style={{fontWeight: 'bold'}}>Click Box</a> to Access the Web App; <a style={{fontWeight: 'bold'}}>Link to GitHub</a> for project is to the right of app link</a></p>
+                    <p> <a style={{whiteSpace: 'preWrap', fontWeight: 'bold', fontSize: '30px'}}>Projects</a><div style={{fontStyle: 'italic', fontSize: '18px'}}> - <a style={{fontWeight: 'bold'}}>Click Box</a> to Access the Web App; <a style={{fontWeight: 'bold'}}>Link to GitHub</a> for project is to the right of app link</div></p>
 
-                    <p> <a style={{fontSize: '18px'}}><a style={{fontWeight: 'bold'}}>Note: </a>BioLab and MyDashboard do not yet have Mobile Friendly UI</a> </p>
+                    <p> <div style={{fontSize: '18px'}}><a style={{fontWeight: 'bold'}}>Note: </a>BioLab and MyDashboard do not yet have Mobile Friendly UI</div> </p>
 
                     <p id={styles.noteToScrollDown}> <a style={{fontSize: '18px', fontWeight: 'bold'}}>You may need to scroll down to see all projects.</a> </p>
               
@@ -56,19 +56,19 @@ const ProjectsPage = () => {
                     <div id={styles.items}>
 
                         <a className={styles.link} href={bioLabLink}> 
-                        <div className={styles.parent}>
-                            <div className={styles.item}>
+                            <div className={styles.parent}>
+                                <div className={styles.item}>
 
-                                <div className={styles.itemTitle}>BioLab</div>
+                                    <div className={styles.itemTitle}>BioLab</div>
 
-                                <div className={styles.itemDescription}><p><a style={{fontWeight: 'bold'}}>Work in progress:</a> BioLab is a system to help biologists manage laboratory experiments and exercises. It is a separate React app hosted on the same Express server for this site. Specifies a RESTful API and uses MySQL database hosted in AWS RDS.</p></div>
-                                
+                                    <div className={styles.itemDescription}><p><div style={{fontWeight: 'bold'}}>Work in progress:</div> BioLab is a system to help biologists manage laboratory experiments and exercises. It is a separate React app hosted on the same Express server for this site. Specifies a RESTful API and uses MySQL database hosted in AWS RDS.</p></div>
+                                    
+                                </div>
+
+                                <div className={styles.gitHubLink}>
+                                    <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia/my-website/tree/master/biolab" />
+                                </div>
                             </div>
-
-                            <div className={styles.gitHubLink}>
-                                <SocialIcon bgColor="#000000" style={{height: 40, width: 40}}  url="https://github.com/MatthewBisicchia/my-website/tree/master/biolab" />
-                            </div>
-                        </div>
                         </a>
 
                         <br />
