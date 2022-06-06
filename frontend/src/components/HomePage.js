@@ -35,7 +35,6 @@ const HomePage = () => {
                 <div id={styles.middleSection}>
 
                     <div class={styles.interests}>Programmer & Electronics Enthusiast</div>
-                    <div class={styles.interests}>Fascinated with Biology</div>
                     <div id={styles.ethic}> Team Player & Self Driven</div>
 
                 </div>
