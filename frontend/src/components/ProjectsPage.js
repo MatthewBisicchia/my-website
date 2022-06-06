@@ -43,7 +43,7 @@ const ProjectsPage = () => {
 
                     <p> <a style={{fontSize: '18px'}}><a style={{fontWeight: 'bold'}}>Note: </a>BioLab and MyDashboard do not yet have Mobile Friendly UI</a> </p>
 
-                    <p id={styles.noteToScrollDown} style={{display: 'none'}}> <a style={{fontSize: '18px', fontWeight: 'bold'}}>Scroll Down to See All Projects</a> </p>
+                    <p id={styles.noteToScrollDown}> <a style={{fontSize: '18px', fontWeight: 'bold'}}>You may need to scroll down to see all projects.</a> </p>
               
                 </div>
 
