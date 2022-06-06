@@ -61,7 +61,7 @@ const ProjectsPage = () => {
 
                                     <div className={styles.itemTitle}>BioLab</div>
 
-                                    <div className={styles.itemDescription}><p><div style={{fontWeight: 'bold'}}>Work in progress:</div> BioLab is a system to help biologists manage laboratory experiments and exercises. It is a separate React app hosted on the same Express server for this site. Specifies a RESTful API and uses MySQL database hosted in AWS RDS.</p></div>
+                                    <div className={styles.itemDescription}><p><a style={{fontWeight: 'bold'}}>Work in progress:</a> BioLab is a system to help biologists manage laboratory experiments and exercises. It is a separate React app hosted on the same Express server for this site. Specifies a RESTful API and uses MySQL database hosted in AWS RDS.</p></div>
                                     
                                 </div>
 
