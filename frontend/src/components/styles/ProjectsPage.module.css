@@ -140,18 +140,26 @@
     align-items: center;
 }
 
+#noteToScrollDown {
+    display: none;
+}
 
 @media (max-width: 990px) {
 
     #headingBlock {
         margin-top: 25%;
-        height: 12%;
+        height: 28%;
         width: 90%;
         padding: 5%;
+        padding-top: 10%;
+    }
+
+    #noteToScrollDown {
+        display: block;
     }
 
     #items {
-        margin-top: 40%;
+        margin-top: 90%;
     }
 
     .item {
