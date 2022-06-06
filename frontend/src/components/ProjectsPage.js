@@ -27,8 +27,8 @@ const ProjectsPage = () => {
             state.imageDisplay = "block"
         }
 
-        console.log(state.descriptionDisplay);
-        console.log(state.imageDisplay);
+        // console.log(state.descriptionDisplay);
+        // console.log(state.imageDisplay);
         
     };
 
@@ -39,11 +39,11 @@ const ProjectsPage = () => {
 
                 <div id={styles.headingBlock}>
       
-                    <p> <a style={{whiteSpace: 'preWrap', fontWeight: 'bold', fontSize: '30px'}}>Projects</a><div style={{fontStyle: 'italic', fontSize: '18px'}}> - <a style={{fontWeight: 'bold'}}>Click Box</a> to Access the Web App; <a style={{fontWeight: 'bold'}}>Link to GitHub</a> for project is to the right of app link</div></p>
+                    <div> <a style={{whiteSpace: 'preWrap', fontWeight: 'bold', fontSize: '30px'}}>Projects</a> <p style={{fontStyle: 'italic', fontSize: '18px'}}> - <a style={{fontWeight: 'bold'}}>Click Box</a> to Access the Web App; <a style={{fontWeight: 'bold'}}>Link to GitHub</a> for project is to the right of app link</p></div>
 
-                    <p> <div style={{fontSize: '18px'}}><a style={{fontWeight: 'bold'}}>Note: </a>BioLab and MyDashboard do not yet have Mobile Friendly UI</div> </p>
+                    <div> <div style={{fontSize: '18px'}}><a style={{fontWeight: 'bold'}}>Note: </a>BioLab and MyDashboard do not yet have Mobile Friendly UI</div> </div>
 
-                    <p id={styles.noteToScrollDown}> <a style={{fontSize: '18px', fontWeight: 'bold'}}>You may need to scroll down to see all projects.</a> </p>
+                    <div id={styles.noteToScrollDown}> <a style={{fontSize: '18px', fontWeight: 'bold'}}>You may need to scroll down to see all projects.</a> </div>
               
                 </div>
 
