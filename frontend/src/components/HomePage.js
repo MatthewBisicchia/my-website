@@ -28,7 +28,7 @@ const HomePage = () => {
                     </div>
 
                     <div id={styles.scrollDown}>
-                        Scroll down to Learn More
+                        Scroll Down to Learn More
                     </div>
                 </div>
 
