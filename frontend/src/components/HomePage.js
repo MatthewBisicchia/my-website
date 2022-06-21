@@ -53,7 +53,7 @@ const HomePage = () => {
                     <br />
 
                     <div>
-                    Feel free to contact me by phone or email (info at bottom of this page). If you want someone to talk to about careers, or if you have software/hardware/electrical engineering interests/questions and want to chat, do not hesitate. Also, feel free to connect with me on LinkedIn (link in top right corner). I look forward to hearing from you!
+                    Feel free to contact me by phone or email (info at bottom of this page). If you would like to talk about careers, or if you have software/hardware/electrical engineering interests/questions and want to chat, do not hesitate. Additionally, my LinkedIn can be accessed in the top right corner. I look forward to hearing from you!
                     </div>
 
                     <br />
@@ -61,9 +61,10 @@ const HomePage = () => {
 
                     <div>
                     
-                        <a style={{fontSize: '20px', fontWeight: 'bold', margin: '3px'}}>Feel free to have a look around here. At the top right of the header of this page, you can find:</a>
+                        <a style={{fontSize: '20px', fontWeight: 'bold', margin: '3px'}}>At the top right in the header of this page, you can find:</a>
                     
-                        <div>
+                        
+                        <div style={{marginTop: '20px', marginLeft: '20px'}}>
                             <li>some projects at the "Projects" button</li>
 
                             <li>my resume at the "Resume" button</li>
