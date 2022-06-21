@@ -47,13 +47,13 @@ const HomePage = () => {
                     <br />
 
                     <div>I love building things. Programming is my favorite pastime. I also enjoy learning concepts in electronics and signal processing.
-                    I am graduating this May from Rowan University in Glassboro, NJ, studying Electrical and Computer Engineering. 
+                    I graduated this May from Rowan University in Glassboro, NJ, with a major in Electrical and Computer Engineering and a minor in Computer Science. 
                     </div>
 
                     <br />
 
                     <div>
-                    If you would like to connect, follow me on LinkedIn (link in top right corner), or contact me by email or phone (info at bottom of this page). I look forward to hearing from you!
+                    Feel free to contact me by phone or email (info at bottom of this page). If you want someone to talk to about careers, or if you have software/hardware/electrical engineering interests/questions and want to chat, do not hesitate. Also, feel free to connect with me on LinkedIn (link in top right corner). I look forward to hearing from you!
                     </div>
 
                     <br />
