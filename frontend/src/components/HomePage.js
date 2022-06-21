@@ -46,7 +46,7 @@ const HomePage = () => {
     
                     <br />
 
-                    <div>I love building things. Programming is my favorite pastime. I also enjoy learning concepts in electronics and signal processing.
+                    <div>I love building things. Programming is my favorite pastime. I also enjoy learning concepts in Electronics, Signal Processing, Physics, and Biology.
                     I graduated this May from Rowan University in Glassboro, NJ, with a major in Electrical and Computer Engineering and a minor in Computer Science. Welcome to my site, which I am building using Express and React and running in a Node.js environment in AWS.
                     </div>
 
@@ -109,7 +109,6 @@ const HomePage = () => {
                     
                     <div>
                         <div> <a style={{fontWeight: 'bold'}}>Site Facts:</a> Express Backend, React Frontend, Deployed with AWS</div>
-                        <br></br>
                         <a style={{fontSize: '15px', fontStyle: 'italic'}}>Except for MyDashBoard app, which has a Spring Boot Backend, Angular Frontend, also Deployed with AWS</a>   
                     </div>
 
