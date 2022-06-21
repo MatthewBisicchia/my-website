@@ -47,13 +47,13 @@ const HomePage = () => {
                     <br />
 
                     <div>I love building things. Programming is my favorite pastime. I also enjoy learning concepts in electronics and signal processing.
-                    I graduated this May from Rowan University in Glassboro, NJ, with a major in Electrical and Computer Engineering and a minor in Computer Science. 
+                    I graduated this May from Rowan University in Glassboro, NJ, with a major in Electrical and Computer Engineering and a minor in Computer Science. Welcome to my site, which I am building using Express and React and running in a Node.js environment in AWS.
                     </div>
 
                     <br />
 
                     <div>
-                    Feel free to contact me by phone or email (info at bottom of this page). If you would like to talk about careers, or if you have software/hardware/electrical engineering interests/questions and want to chat, do not hesitate. Additionally, my LinkedIn can be accessed in the top right corner. I look forward to hearing from you!
+                    Feel free to contact me by phone or email: even if we never met before! (Contact info at bottom of this page). If you would like to talk about careers, or if you have software/hardware/electrical engineering interests/questions and want to chat, do not hesitate. Additionally, my LinkedIn can be accessed in the top right corner. I look forward to hearing from you!
                     </div>
 
                     <br />
@@ -65,7 +65,7 @@ const HomePage = () => {
                     
                         
                         <div style={{marginTop: '20px', marginLeft: '20px'}}>
-                            <li>some projects at the "Projects" button</li>
+                            <li>some of my work-in-progress projects at the "Projects" button</li>
 
                             <li>my resume at the "Resume" button</li>
 
